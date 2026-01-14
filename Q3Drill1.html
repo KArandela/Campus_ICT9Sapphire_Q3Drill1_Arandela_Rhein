@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Drill 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        #head1 {
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        
+        .instructions {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .btn-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            padding: 12px 25px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            margin: 8px;
+            color: white;
+        }
+        
+        .btn-info:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+        }
+        
+        .btn-info:active {
+            transform: translateY(-2px);
+        }
+        
+        #result {
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            text-align: center;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center mb-4" id="head1"></h1>
+    <p class="text-center instructions">If Katie has ₱2,000, and spends ₱1,999 on makeup, how much does she have left?</p>
+    
+
+    <div class="text-center">
+        <button type="button" class="btn btn-info me-2" onclick="document.getElementById('result').innerHTML=answer1;">1</button>
+        <button type="button" class="btn btn-info me-2" onclick="document.getElementById('result').innerHTML=answer2;">67</button>
+        <button type="button" class="btn btn-info me-2" onclick="document.getElementById('result').innerHTML=answer3;">100</button>
+    </div>
+    
+    <p id="result" class="text-center"></p>
+</div>
+
+<script>
+    var h = "Basic Calculator";
+    var answer1 = "<span style='color: lightgreen;'>Correct</span>";
+    var answer2 = "<span style='color: cyan;'>SIX SEVEEENENENENENENENNE</span>"; 
+    var answer3 = "<span style='color: red;'>Wrong</span>";
+    
+
+    document.getElementById('head1').innerHTML = h;
+
+</script>
+
+</body>
+</html>
